@@ -47,13 +47,6 @@
       <version>4.0.0-SNAPSHOT</version>
     </dependency>
     
-    <!-- PrettyFaces with annotations -->
-    <dependency>
-      <groupId>org.ocpsoft.rewrite</groupId>
-      <artifactId>rewrite-integration-cdi</artifactId>
-      <version>1.0.5-SNAPSHOT</version>
-    </dependency>
-
   </dependencies>
 
   <repositories>

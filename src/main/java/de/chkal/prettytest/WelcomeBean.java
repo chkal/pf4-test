@@ -5,6 +5,7 @@ import javax.faces.bean.RequestScoped;
 
 import org.apache.log4j.Logger;
 import org.ocpsoft.prettyfaces.annotation.ForwardTo;
+import org.ocpsoft.prettyfaces.annotation.URLAction;
 import org.ocpsoft.prettyfaces.annotation.URLPattern;
 
 @ManagedBean
@@ -19,8 +20,13 @@ public class WelcomeBean
    private String name;
 
    // Action called on GET request for /welcome
+   @URLAction
    public void start()
-   {}
+   {
+      System.out.println("+++++++++++++++++++++++++++");
+      System.out.println("+++++++++++++++++++++++++++");
+      System.out.println("+++++++++++++++++++++++++++");
+   }
 
    public String getName()
    {

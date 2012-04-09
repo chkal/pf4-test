@@ -1,14 +1,15 @@
 package de.chkal.prettytest;
 
-import javax.enterprise.context.RequestScoped;
-import javax.inject.Named;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.RequestScoped;
 
 import org.apache.log4j.Logger;
 import org.ocpsoft.prettyfaces.annotation.ForwardTo;
 import org.ocpsoft.prettyfaces.annotation.ParameterBinding;
+import org.ocpsoft.prettyfaces.annotation.URLAction;
 import org.ocpsoft.prettyfaces.annotation.URLPattern;
 
-@Named
+@ManagedBean
 @RequestScoped
 @URLPattern("/greeting/{name}")
 @ForwardTo("/greeting.jsf")
@@ -20,10 +21,11 @@ public class GreetingBean
    @ParameterBinding
    private String name;
 
+   @URLAction
    public void showGreeting()
    {
-      // TODO
-
+      System.out.println("*************************************");
+      System.out.println("*************************************");
    }
 
    public String getName()
