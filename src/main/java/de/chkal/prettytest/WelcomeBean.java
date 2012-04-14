@@ -20,7 +20,7 @@ public class WelcomeBean
    private String name;
 
    // Action called on GET request for /welcome
-   @URLAction
+   @URLAction(onPostback = false)
    public void start()
    {
       System.out.println("+++++++++++++++++++++++++++");
